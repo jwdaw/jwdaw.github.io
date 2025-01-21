@@ -1,0 +1,56 @@
+/* Structure */
+body {
+    background:url(images/windowsXP.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content {
+    background-color:lightgrey  ;
+    width: 90%; /* Width of content */
+    margin:auto; /* Center */
+    padding: 5px; /* Space between border and content */
+    border: 1px solid black; /* Border around content */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 5px 5px black; /* Shadow */
+}
+
+header, footer {
+    background: white;
+    padding: 5px;
+    color: black;
+}
+
+/* Navigation */
+#main-nav ul{
+    padding-left: 0;
+}
+
+#main-nav li{
+    list-style-type: none;
+    display: inline-block;
+
+}
+
+#main-nav a{
+    color: black;
+    text-decoration: none;
+    border: 2px solid transparent;
+
+}
+
+#main-nav a:hover{
+    color: white;
+    background-color: black;
+    padding: 2px;
+    border-radius: 5px;
+
+}
+
+/* Typography */
+header h1 {
+    text-align: center;
+}
+footer p {
+    text-align: center;
+}
+
