@@ -1,0 +1,73 @@
+/* Structure */
+body {
+    background:url(images/CalendarImage.jpg);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#content {
+    background-color:rgb(174, 173, 173)  ;
+    width: 98%; 
+    margin:auto; 
+    border: 5px solid gray;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.main-header, .main-footer {
+    background-color: blanchedalmond;
+    padding: 5px;
+    color: black;
+}
+
+.img-holder img {
+    border: 5px solid gray;
+    padding: 5px;
+    margin: auto;  
+    background-color: blanchedalmond; 
+}
+
+/* Navigation */
+#main-nav ul{
+    padding-left: 0;
+    border: 2px solid black;
+    padding: 2px;
+    text-align: center;
+    
+}
+
+#main-nav li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+#main-nav a{
+    color: black;
+    text-decoration: none;
+    border: 2px solid transparent;
+}
+
+#main-nav a:hover{
+    color: white;
+    background-color: black;
+    padding: 2px;
+    border-radius: 5px;
+
+}
+
+#tip-list {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: blanchedalmond;
+    border: 2px solid black;
+}
+
+/* Typography */
+header h1 {
+    text-align: center;
+    border: 2px solid black;
+}
+footer p {
+    text-align: center;
+    border: 2px solid black;
+}
+
