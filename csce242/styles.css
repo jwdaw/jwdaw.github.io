@@ -47,6 +47,17 @@ body {
 
 .assignments h3 {
   text-align: center;
+  text-decoration: none;
+}
+
+.assignments a {
+  text-decoration: none;
+  color: black;
+}
+
+.assignments a:hover {
+  color: darkred;
+  text-decoration: none;
 }
 
 #main-content h2 {
