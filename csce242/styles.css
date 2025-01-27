@@ -1,113 +1,105 @@
 /* Structure */
-body {
-    background-color: rgb(100, 0, 0);
-    font-family: Arial, Helvetica, sans-serif;
+#main-header,
+#main-footer {
+  background-color: darkred;
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
 }
 
-#main_info {
-    background-color: rgb(255, 255, 255);
-    width: 99%; 
-    margin: auto; 
-    padding: 5px; 
-    border: 1px solid black;
-    border-radius: 5px; 
-    box-shadow: 5px 5px black; 
+#main-content {
+  padding: 5px;
 }
 
-#assignments {
-    background-color: rgb(255, 255, 255);
-    width: 99%; 
-    margin: auto; 
-    margin-top: 10px;
-    padding: 5px; 
-    border: 1px solid black; 
-    border-radius: 5px; 
-    box-shadow: 5px 5px black; 
+#name {
+  margin: auto;
 }
 
-#assignments h2 {
-    background-color: lightgrey;
-    margin: auto;
-    padding: 3px;
-    border: 1px solid black;
-    border-radius: 5px;
-    font-size: large;
+.flex-container {
+  margin: 5px;
+  padding: 5px;
 }
 
-#main-nav {
-    background-color: lightgrey;
-    width: 99%; 
-    margin: auto; 
-    padding: 3px; 
-    border: 1px solid black; 
-    border-radius: 5px; 
+.assignments {
+  background-color: lightgrey;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: left;
+  max-width: 350px;
+  min-width: 350px;
 }
 
-#main-nav ul {
-    padding-left: 0;
+.assignments img {
+  border-radius: 5px;
+  display: block;
+  margin: auto;
 }
-
-#main-nav li {
-    list-style-type: none;
-    display: inline-block;
-}
-
-#main-nav a {
-    color: black;
-    text-decoration: none;
-    border: 2px solid transparent;
-    font-weight: bold;
-    font-size: large;
-}
-
-#main-nav a:hover {
-    color: white;
-    background-color: black;
-    padding: 2px;
-    border-radius: 5px;
-}
-
-#assignments ul {
-    padding-left: 0;
-}
-
-#assignments li {
-    list-style-type: none;
-    margin: 5px 0;
-}
-
-#assignments a {
-    color: black;
-    text-decoration: none;
-    border: 2px solid transparent;
-    font-weight: bold;
-}
-
-#assignments a:hover {
-    color: white;
-    background-color: black;
-    padding: 2px;
-    border-radius: 5px;
-}
-
-
-
-
 
 /* Typography */
-header h1 {
-    text-align: center;
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-main h2, p, #main-nav{
-    text-align: center;
+#main-header h1 {
+  text-align: center;
 }
 
-footer p {
-    text-align: center;
+.assignments h3 {
+  text-align: center;
 }
 
-#assignments {
-    text-align: center;
+#main-content h2 {
+  text-align: center;
 }
 
+/* Larger Resolutions */
+@media (min-width: 1000px) {
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .assignments {
+    flex: 1;
+  }
+
+  #name {
+    order: 1;
+  }
+
+  #main-header h1 {
+    order: 3;
+  }
+}
+
+/* Smaller Resolutions */
+@media (max-width: 999px) {
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .assignments {
+    margin: 10px 0;
+  }
+
+  #main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #name {
+    order: 3;
+    margin: 10px 0;
+  }
+
+  #main-header h1 {
+    order: 1;
+    text-align: center;
+    margin: auto;
+  }
+}
