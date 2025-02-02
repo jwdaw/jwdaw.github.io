@@ -7,8 +7,18 @@
   border-radius: 5px;
 }
 
+#assignment-header {
+  background-color: lightgrey;
+  padding: 10px;
+  color: black;
+  border-radius: 5px;
+  margin-top: 2px;
+}
+
 #main-content {
   padding: 5px;
+  background-color: darkgray;
+  border-radius: 5px;
 }
 
 #name {
@@ -17,7 +27,6 @@
 
 .flex-container {
   margin: 5px;
-  padding: 5px;
 }
 
 .assignments {
