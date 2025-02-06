@@ -1,0 +1,111 @@
+/* Structure */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: antiquewhite;
+}
+
+#main-header {
+  padding: 10px;
+}
+
+#flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flex-item {
+  display: flex;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: ghostwhite;
+  box-sizing: border-box;
+}
+
+#flex-item-hello {
+  display: flex;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: ghostwhite;
+  box-sizing: border-box;
+}
+
+#color-picker {
+  margin-bottom: 20px;
+}
+
+/* 
+Code Citation
+Description: CSS Shape made into a Star
+Author: CSSShape
+Date: February 5, 2025
+URL: https://css-shape.com/star/
+*/
+#star {
+  width: 120px;
+  aspect-ratio: 1;
+  background-color: black;
+  clip-path: polygon(
+    50% 0,
+    calc(50% * (1 + sin(0.4turn))) calc(50% * (1 - cos(0.4turn))),
+    calc(50% * (1 - sin(0.2turn))) calc(50% * (1 - cos(0.2turn))),
+    calc(50% * (1 + sin(0.2turn))) calc(50% * (1 - cos(0.2turn))),
+    calc(50% * (1 - sin(0.4turn))) calc(50% * (1 - cos(0.4turn)))
+  );
+}
+
+/*Typography*/
+#main-header {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+#main-header h1 {
+  margin: 0;
+  color: rgb(56, 32, 1);
+}
+
+#main-header h2 {
+  color: rgb(100, 20, 0);
+}
+
+.flex-item h3 {
+  text-align: center;
+}
+
+#main-footer {
+  text-align: center;
+  font-size: 0.8em;
+  color: rgb(100, 20, 0);
+}
+
+/* Media Queries */
+@media (min-width: 900px) {
+  #flex-container {
+    flex-direction: row;
+    flex: 1;
+  }
+
+  .flex-item {
+    margin: 10px;
+    padding: 10px;
+    min-height: 300px;
+    max-height: 300px;
+  }
+
+  #flex-item-hello {
+    margin: 10px;
+    padding: 10px;
+    min-height: 300px;
+    max-height: 300px;
+  }
+}
