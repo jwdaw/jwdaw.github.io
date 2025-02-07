@@ -20,6 +20,14 @@ body {
   border-radius: 10px;
 }
 
+#main-content h3 {
+  margin: 5px;
+  padding: 10px;
+  background-color: darkred;
+  color: white;
+  border-radius: 10px;
+}
+
 #main-content h2 {
   background-color: black;
   color: white;
@@ -29,13 +37,67 @@ body {
   margin: 5px;
 }
 
+/*Image Slideshow*/
+
+#img-section {
+  border: darkgray 5px solid;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#dots {
+  padding-top: 10px;
+}
+
+#slideshow {
+  border-radius: 10px;
+  margin: 5px;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  border-radius: 10px;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
 /*Navigation*/
 #main-nav ul {
-  border: 2px darkgray solid;
   border-radius: 10px;
   list-style: none;
   padding: 2px;
   margin: 5px;
+  border: 5px darkgray solid;
 }
 
 #main-nav ul li {
@@ -47,16 +109,14 @@ body {
   text-decoration: none;
   color: black;
   padding: 10px;
-  margin: 5px;
   display: block;
+  border-radius: 10px;
 }
 
 #main-nav ul li a:hover {
   background-color: darkgray;
   color: white;
   border-radius: 10px;
-  padding: 10px;
-  margin: 5px;
 }
 
 /*Typography*/
@@ -66,4 +126,23 @@ body {
 
 #main-content {
   text-align: center;
+}
+
+/*Media Queries*/
+@media (min-width: 900px) {
+  #main-nav ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .flex-item {
+    min-width: 50%;
+    max-width: 50%;
+    min-height: 30%;
+    max-height: 30%;
+  }
 }

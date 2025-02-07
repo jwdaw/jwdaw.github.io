@@ -14,7 +14,7 @@
       <nav id="main-nav">
         <ul>
           <li>
-            <a href="index.hmtl">Home</a>
+            <a href="#">Home</a>
             <a href="#">About Me</a>
             <a href="#">Projects</a>
             <a href="#">Contact Me</a>
@@ -24,26 +24,34 @@
     </header>
     <!--Main Content of Home Page-->
     <main id="main-content">
-      <p>
+      <h3>
         Welcome to my professional, educational, and personal work portfolio.
         Displayed on these pages are projects I have spent time creating and the
-        skils I have gained in that process. Some of these projects were worked
-        on in groups, and other ones were created by myself. If you are curious
-        about any of my work or would like to ask any questions, don't hesitate
-        to reach out to me with the info on the "Contect Me" page. Thank You!
-      </p>
+        skils I have gained in that process.
+      </h3>
       <!--flex container containing most of the main content-->
       <section id="flex-container">
-        <div class="flex-item">
+        <div class="flex-item img">
           <h2>Recent Work</h2>
           <!--Image Slideshow-->
-          <div id="slideshow">
-            <div class="slide">
-              <img src="https://picsum.photos/300/150" />
-              <img src="https://picsum.photos/300/150" />
-              <img src="https://picsum.photos/300/150" />
+          <section id="img-section">
+            <div id="slideshow">
+              <div class="slide fade">
+                <img src="https://placehold.co/300x150" />
+              </div>
+              <div class="slide fade">
+                <img src="https://picsum.photos/300/150" />
+              </div>
+              <div class="slide fade">
+                <img src="https://fakeimg.pl/300x150" />
+              </div>
             </div>
-          </div>
+            <div id="dots" style="text-align: center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+          </section>
         </div>
         <div class="flex-item">
           <h2>News</h2>
@@ -73,5 +81,6 @@
     <footer id="main-footer">
       <p>Copyright &copy; 2023 Jackson Dawson</p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
