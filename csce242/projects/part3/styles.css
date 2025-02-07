@@ -20,6 +20,11 @@ body {
   border-radius: 10px;
 }
 
+.news p {
+  display: flex;
+  align-items: center;
+}
+
 #main-content h3 {
   margin: 5px;
   padding: 10px;
