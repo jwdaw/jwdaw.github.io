@@ -1,3 +1,6 @@
+/*--------------------------------------------------------------*/
+/*-------------------------INDEX.HTML CSS-----------------------*/
+/*--------------------------------------------------------------*/
 /*Structure*/
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -12,7 +15,7 @@ body {
   border-radius: 10px;
 }
 
-#main-content p {
+#news {
   margin: 5px;
   padding: 10px;
   background-color: darkred;
@@ -158,5 +161,113 @@ body {
   .flex-item #img-section {
     min-height: 80%;
     max-height: 80%;
+  }
+}
+
+/*--------------------------------------------------------------*/
+/*-------------------------ABOUT.HTML CSS-----------------------*/
+/*--------------------------------------------------------------*/
+/*Structure*/
+
+#jackson-info {
+  margin: 5px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+
+#hobbies {
+  background-color: darkred;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  max-width: 630px;
+  min-width: 630px;
+}
+
+#hobbies p {
+  background-color: black;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  max-width: 600px;
+  min-width: 600px;
+}
+
+#jackson-info p {
+  margin: 5px;
+  padding: 10px;
+  background-color: darkred;
+  color: white;
+  border-radius: 10px;
+}
+
+#flex-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#hobby-img {
+  border-radius: 10px;
+  border: 20px solid black;
+  margin: 5px;
+}
+
+.flex-section {
+  margin: 10px;
+}
+
+#profile-img {
+  border-radius: 120px;
+  border: 20px solid darkred;
+  margin-bottom: 10px;
+}
+
+#jackson-info {
+  max-width: 250px;
+  min-width: 250px;
+  margin: auto;
+}
+
+/*Typography*/
+#jackson-info {
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Media Queries */
+@media (max-width: 900px) {
+  #flex-box {
+    display: block;
+  }
+  #hobby-img {
+    max-width: 80%;
+    min-width: 80%;
+  }
+  #hobbies,
+  #jackson-info,
+  #main-header,
+  #main-nav {
+    max-width: 250px;
+    min-width: 250px;
+    margin: auto;
+  }
+
+  #hobbies p {
+    max-width: 220px;
+    min-width: 220px;
+    margin: auto;
+  }
+  #hobbies {
+    margin-bottom: 10px;
+  }
+  #hobby-img {
+    max-width: 250px;
+    min-width: 250px;
+    margin: auto;
   }
 }
