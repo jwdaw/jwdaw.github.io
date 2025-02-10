@@ -271,3 +271,145 @@ body {
     margin: auto;
   }
 }
+
+/*--------------------------------------------------------------*/
+/*-------------------------PROJECTS.HTML CSS-----------------------*/
+/*--------------------------------------------------------------*/
+/*Structure*/
+#project-menu {
+  display: flex;
+  flex-direction: column;
+  background-color: darkred;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  min-width: fit-content;
+  max-width: fit-content;
+  align-items: center;
+  justify-content: center;
+}
+
+#project-menu button {
+  margin: 10px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+
+#flex-project {
+  display: flex;
+  flex-direction: row;
+}
+
+#project-top {
+  display: flex;
+  flex-direction: row;
+}
+
+#project-top img {
+  border-radius: 10px;
+  border: 20px solid black;
+
+  margin-right: 10px;
+}
+
+#project-desc {
+  background-color: black;
+  border-radius: 10px;
+  padding: 10px;
+  margin: auto;
+  min-width: 350px;
+  display: flex;
+}
+
+#project-top p {
+  color: white;
+  background-color: darkred;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+#project-bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+#skills,
+#sources {
+  background-color: darkred;
+  padding: 10px;
+  margin: 5px;
+  color: white;
+  border-radius: 10px;
+}
+
+#skills p,
+#sources p {
+  background-color: black;
+  padding: 10px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 900px) {
+  #project-menu {
+    max-width: 250px;
+    min-width: 250px;
+    margin: auto;
+  }
+  #project-desc {
+    max-width: 250px;
+    min-width: 250px;
+    margin: auto;
+  }
+  #project-top {
+    display: block;
+  }
+  #project-top img {
+    max-width: 250px;
+    min-width: 250px;
+    margin: auto;
+  }
+  #project-bottom {
+    flex-direction: column;
+    margin: auto;
+    max-width: 250px;
+    min-width: 250px;
+  }
+}
+
+/*--------------------------------------------------------------*/
+/*-------------------------CONTACT.HTML CSS-----------------------*/
+/*--------------------------------------------------------------*/
+/*Structure*/
+#main-content {
+  text-align: center;
+}
+
+#main-content h1,
+p {
+  background-color: darkred;
+  color: white;
+  border-radius: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+}
+
+#main-content p {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+}
+
+#flex-box {
+  background-color: darkred;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+}
