@@ -9,3 +9,8 @@ document.getElementById("btn-color").onclick = () => {
   messageP.innerHTML = "Goodbye!";
   messageP.classList.add("sad");
 };
+
+//toggling the navigation on smaller screens
+document.getElementById("toggle-nav").onclick = () => {
+  document.getElementById("nav-items").classList.toggle("hide-small");
+};

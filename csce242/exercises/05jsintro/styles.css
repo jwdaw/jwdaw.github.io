@@ -4,6 +4,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.hide-small {
+  display: none;
+}
+
 #content {
   background-color: lightgrey;
   width: 90%; /* Width of content */
@@ -26,6 +30,13 @@ footer {
 }
 
 /* Navigation */
+#toggle-nav div {
+  width: 25px;
+  height: 2px;
+  background-color: black;
+  margin: 6px 0;
+}
+
 #main-nav ul {
   padding-left: 0;
 }
@@ -54,4 +65,19 @@ header h1 {
 }
 footer p {
   text-align: center;
+}
+
+/*Larger Screens*/
+
+@media (min-width: 900px) {
+  #toggle-nav {
+    display: none;
+  }
+  .hide-small {
+    display: block;
+  }
+}
+
+/*Smaller Screens*/
+@media (max-width: 899px) {
 }
