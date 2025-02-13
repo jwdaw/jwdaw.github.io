@@ -29,6 +29,25 @@ footer {
   color: red;
 }
 
+/* Donation */
+#txt-donation {
+}
+
+#ball,
+#circle {
+  height: 30px;
+  width: 30px;
+  background: blue;
+  border-radius: 50px;
+  position: relative;
+  left: 5%;
+}
+
+#ball-area {
+  position: relative;
+  height: 200px;
+}
+
 /* Navigation */
 #toggle-nav div {
   width: 25px;

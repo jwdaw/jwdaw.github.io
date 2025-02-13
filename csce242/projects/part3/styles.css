@@ -1,6 +1,12 @@
 /*--------------------------------------------------------------*/
 /*-------------------------INDEX.HTML CSS-----------------------*/
 /*--------------------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /*Structure*/
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -9,10 +15,8 @@ body {
 
 #main-header h1 {
   padding: 10px;
-  margin: 5px;
   background-color: darkred;
   color: white;
-  border-radius: 10px;
 }
 
 #news {
@@ -29,11 +33,9 @@ body {
 }
 
 #main-content h3 {
-  margin: 5px;
   padding: 10px;
   background-color: darkred;
   color: white;
-  border-radius: 10px;
 }
 
 #main-content h2 {
@@ -46,9 +48,6 @@ body {
 }
 
 #main-footer {
-  padding: 10px;
-  margin: 5px;
-  text-align: center;
 }
 
 /*Image Slideshow*/
@@ -58,6 +57,7 @@ body {
   margin: 5px;
   padding: 10px;
   border-radius: 10px;
+  padding-bottom: 10px;
 }
 
 #dots {
@@ -114,6 +114,25 @@ body {
   border: 5px darkgray solid;
 }
 
+.hide-small {
+  display: none;
+}
+
+#toggle-nav div {
+  width: 25px;
+  height: 2px;
+  background-color: black;
+  margin: 4px 0;
+}
+
+#toggle-nav {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 10px;
+  align-items: center;
+}
+
 #main-nav ul li {
   display: flex;
   display: block;
@@ -148,6 +167,18 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+  }
+
+  #img-section {
+    padding-bottom: 40px;
+  }
+
+  .hide-small {
+    display: block;
+  }
+
+  #toggle-nav {
+    display: none;
   }
   #flex-container {
     display: flex;
@@ -247,14 +278,6 @@ body {
   #hobby-img {
     max-width: 80%;
     min-width: 80%;
-  }
-  #hobbies,
-  #jackson-info,
-  #main-header,
-  #main-nav {
-    max-width: 250px;
-    min-width: 250px;
-    margin: auto;
   }
 
   #hobbies p {
