@@ -466,3 +466,42 @@ p {
   padding: 10px;
   border-radius: 10px;
 }
+
+/*--------------------------------------------------------------*/
+/*------------------------BLOG.HTML CSS-----------------------*/
+/*--------------------------------------------------------------*/
+/*Structure*/
+#flex-blog {
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.flex-post {
+  margin: 5px;
+  background-color: darkgray;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#flex-blog img {
+  border: 10px solid darkred;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.blog-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Media Queries */
+
+@media (max-width: 900px) {
+  .blog-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
