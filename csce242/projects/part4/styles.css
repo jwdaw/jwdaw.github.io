@@ -25,6 +25,7 @@ body {
   background-color: darkred;
   color: white;
   border-radius: 10px;
+  min-height: 362px;
 }
 
 .news p {
@@ -47,7 +48,9 @@ body {
   margin: 5px;
 }
 
-#main-footer {
+#main-footer p {
+  border-radius: 0px;
+  margin: 0;
 }
 
 /*Image Slideshow*/
@@ -208,14 +211,18 @@ body {
   border-radius: 10px;
 }
 
+.flex-section {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
 #hobbies {
   background-color: darkred;
   margin: 5px;
   padding: 10px;
   border-radius: 10px;
   color: white;
-  max-width: 630px;
-  min-width: 630px;
 }
 
 #hobbies p {
@@ -224,8 +231,6 @@ body {
   padding: 10px;
   border-radius: 10px;
   color: white;
-  max-width: 600px;
-  min-width: 600px;
 }
 
 #jackson-info p {
@@ -238,28 +243,34 @@ body {
 
 #flex-box {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 #hobby-img {
   border-radius: 10px;
   border: 20px solid black;
-  margin: 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  max-width: 50%;
+  min-width: 50%;
+  margin: auto;
 }
 
-.flex-section {
-  margin: 10px;
+#hobbies {
+  margin-bottom: 20px;
 }
 
 #profile-img {
   border-radius: 120px;
   border: 20px solid black;
   margin-bottom: 10px;
+  max-width: 240px;
+  margin: auto;
+  margin-bottom: 20px;
 }
 
 #jackson-info {
-  max-width: 250px;
-  min-width: 250px;
   margin: auto;
 }
 
@@ -274,22 +285,22 @@ body {
   #flex-box {
     display: block;
   }
+
+  .jd-info p {
+    margin: auto;
+  }
   #hobby-img {
-    max-width: 80%;
-    min-width: 80%;
+    max-width: 98%;
+    min-width: 98%;
   }
 
   #hobbies p {
-    max-width: 220px;
-    min-width: 220px;
     margin: auto;
   }
   #hobbies {
     margin-bottom: 10px;
   }
   #hobby-img {
-    max-width: 250px;
-    min-width: 250px;
     margin: auto;
   }
 }
@@ -341,7 +352,6 @@ body {
   border-radius: 10px;
   padding: 10px;
   margin: auto;
-  min-width: 350px;
   display: flex;
 }
 
@@ -351,6 +361,15 @@ body {
   padding: 10px;
   margin: 5px;
   border-radius: 10px;
+}
+
+#project-top img {
+  margin-bottom: 20px;
+  max-height: 250px;
+}
+
+#project-top h2 {
+  margin: auto;
 }
 
 #project-bottom {
@@ -377,28 +396,40 @@ body {
 
 @media (max-width: 900px) {
   #project-menu {
-    max-width: 250px;
-    min-width: 250px;
     margin: auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .flex-section {
+    display: flex;
+    flex-direction: column;
   }
   #project-desc {
-    max-width: 250px;
-    min-width: 250px;
-    margin: auto;
+    display: flex;
+    margin: 20px;
+  }
+  .flex-projects {
+    display: flex;
+    flex-direction: row;
   }
   #project-top {
     display: block;
+    margin: auto;
+    flex-wrap: wrap;
   }
   #project-top img {
-    max-width: 250px;
-    min-width: 250px;
-    margin: auto;
+    margin-top: 20px;
   }
   #project-bottom {
     flex-direction: column;
     margin: auto;
-    max-width: 250px;
-    min-width: 250px;
+    flex-wrap: wrap;
+  }
+  @media (max-width: 670px) {
+    .flex-projects {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
 
@@ -427,4 +458,11 @@ p {
   border-radius: 10px;
   padding: 10px;
   margin: 5px;
+}
+
+#flex-box {
+  background-color: darkred;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
 }

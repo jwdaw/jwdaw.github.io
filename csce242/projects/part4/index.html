@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <!--head containing tab title and link to stylesheet-->
+  <head>
+    <title>Jackson Dawson Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <!--body containing website content-->
+  <body>
+    <!--Main header containting title and main navigation-->
+    <header id="main-header">
+      <h1>Jackson Dawson Portfolio</h1>
+      <!--Main Navigation-->
+      <nav id="main-nav">
+        <div id="toggle-nav">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <ul id="nav-items" class="columns hide-small">
+          <li>
+            <a href="https://jwdaw.github.io/csce242/projects/part4/index.html"
+              >Home</a
+            >
+            <a href="https://jwdaw.github.io/csce242/projects/part4/about.html"
+              >About Me</a
+            >
+            <a
+              href="https://jwdaw.github.io/csce242/projects/part4/projects.html"
+              >Projects</a
+            >
+            <a
+              href="https://jwdaw.github.io/csce242/projects/part4/contact.html"
+              >Contact Me</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--Main Content of Home Page-->
+    <main id="main-content">
+      <h3>
+        Welcome to my professional, educational, and personal work portfolio.
+        Displayed on these pages are projects I have spent time creating and the
+        skils I have gained in that process.
+      </h3>
+      <!--flex container containing most of the main content-->
+      <section id="flex-container">
+        <div class="flex-item img">
+          <h2>Recent Work</h2>
+          <!--Image Slideshow-->
+          <section id="img-section">
+            <div id="slideshow">
+              <div class="slide fade">
+                <a href="https://github.com/olliekod/davinciFX"
+                  ><img src="images/DavinCi.png"
+                /></a>
+              </div>
+              <div class="slide fade">
+                <a href="https://github.com/jwdaw/Design-Patterns"
+                  ><img src="images/DesignPatterns.png"
+                /></a>
+              </div>
+              <div class="slide fade">
+                <a href="https://jwdaw.github.io/CSCE190"
+                  ><img src="images/csce190.png"
+                /></a>
+              </div>
+            </div>
+            <div id="dots" style="text-align: center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+          </section>
+        </div>
+        <div class="flex-item news">
+          <h2>News</h2>
+          <div id="news">
+            <p>
+              Currently I am studying courses related to Data Structures and
+              Algorithms, Web Development, and Networking!
+            </p>
+            <p>
+              Some projects I am actively working on include this personal
+              portfolio, a chatbot utilizing OpenAI's API, and a sycnronzied
+              timer for coaches(Cross Country and Track and Field) to manage
+              their athletes timing and performances across devices.
+            </p>
+            <p>
+              Some things I hope on learning soon include familiarity with web
+              application frameworks, a deeper understanding of machine learning
+              models/neural networks, and a better grasp of the programming
+              langauge Python!
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="main-footer">
+      <p>Copyright &copy; 2023 Jackson Dawson</p>
+    </footer>
+    <script src="indexscript.js"></script>
+  </body>
+</html>
