@@ -123,6 +123,13 @@
   border-right: 5px solid salmon;
 }
 
+#main-nav li ul {
+  flex: 1;
+  text-align: center;
+  padding: 5px;
+  border-right: 5px solid salmon;
+}
+
 #main-nav a {
   text-decoration: none;
   color: black;
