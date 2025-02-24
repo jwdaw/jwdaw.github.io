@@ -13,17 +13,34 @@ body {
 }
 
 .stair {
+  position: relative;
+  width: 100px;
+  height: 60px;
+  border-top: 5px black solid;
+}
+
+.climber {
   position: absolute;
-  width: 100px; /* Adjust the width as needed */
-  height: 20px; /* Adjust the height as needed */
-  background-color: #ccc; /* Adjust the background color as needed */
+  bottom: 0;
 }
 
 #draw-stairs {
   margin: auto;
   padding: 5px;
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
+}
+
+#draw-stairs:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+#climb-stairs {
+  margin: auto;
+  padding: 5px;
+  display: flex;
+  margin-top: 35px;
 }
 
 #stair-side {
@@ -80,22 +97,4 @@ body {
 
 /* Media Queries */
 @media (min-width: 900px) {
-  #flex-container {
-    flex-direction: row;
-    flex: 1;
-  }
-
-  .flex-item {
-    margin: 10px;
-    padding: 10px;
-    min-height: 300px;
-    max-height: 300px;
-  }
-
-  #flex-item-hello {
-    margin: 10px;
-    padding: 10px;
-    min-height: 300px;
-    max-height: 300px;
-  }
 }
