@@ -1,0 +1,117 @@
+/* Structure */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: antiquewhite;
+}
+
+#main-header {
+  padding: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+#close {
+  position: absolute;
+  right: 10px;
+}
+
+#popup {
+  position: absolute;
+  display: flex;
+  margin: auto;
+  filter: drop-shadow(20px 10px 4px #411411);
+}
+
+#popup img {
+  border: 5px solid black;
+  border-radius: 10px;
+}
+
+.stair {
+  position: relative;
+  width: 100px;
+  height: 60px;
+  border-top: 5px black solid;
+}
+
+.climber {
+  position: absolute;
+  bottom: 0;
+}
+
+#draw-stairs {
+  margin: auto;
+  padding: 5px;
+  display: flex;
+  margin-bottom: 35px;
+}
+
+#draw-stairs:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+#climb-stairs {
+  margin: auto;
+  padding: 5px;
+  display: flex;
+  margin-top: 35px;
+}
+
+#stair-side {
+  position: relative;
+  border-left: 6px black solid;
+  width: 100px;
+  border-right: 6px black solid;
+  height: 600px;
+  margin: auto;
+}
+
+#flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flex-item {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: ghostwhite;
+  box-sizing: border-box;
+}
+
+/*Typography*/
+#main-header {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+#main-header h1 {
+  margin: 0;
+  color: rgb(56, 32, 1);
+}
+
+#main-header h2 {
+  color: rgb(100, 20, 0);
+}
+
+.flex-item h3 {
+  text-align: center;
+}
+
+#main-footer {
+  text-align: center;
+  font-size: 0.8em;
+  color: rgb(100, 20, 0);
+}
+
+/* Media Queries */
+@media (min-width: 900px) {
+}
