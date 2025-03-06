@@ -59,10 +59,6 @@ button2.addEventListener("click", async () => {
   projectDesc.innerHTML =
     "<strong>Project Description: </strong>" + projectsArray[1].desc;
   // set skills
-  skillsPara.innerHTML = "<strong>Skills Gained:</strong>";
-  forEach.projectsArray[1].skills((skill) => {
-    skillsPara.innerHTML += ", " + skill;
-  });
 });
 
 button3.addEventListener("click", async () => {});
