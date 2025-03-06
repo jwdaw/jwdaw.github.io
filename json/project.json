@@ -1,0 +1,63 @@
+[
+  {
+    "_id": "8f298c04-00ed-42bc-b8f7-eaf3ec6ce5df",
+    "name": "DaVinci Academia",
+    "image": "images/DavinCi.png",
+    "desc": "DaVinci Academia is a recreation of a University Course and Major review system. The project was created as a mock full-stack software development life cycle, in which we covered topics such as Requirements elicitation, UML design, Scrum management, Backend development, Database development, Frontend development, and more",
+    "skills": [
+      "Java",
+      "JSON",
+      "Unit Testing",
+      "Git",
+      "Scrum",
+      "UML Design",
+      "Backend development",
+      "Database development",
+      "Frontend development"
+    ],
+    "contributions": [
+      {
+        "url": "https://github.com/Shreklord",
+        "name": "Anthony Goldhammer"
+      },
+      {
+        "url": "https://github.com/olliekod",
+        "name": "Oliver Meihls"
+      },
+      {
+        "url": "https://github.com/sphilips04",
+        "name": "Spencer Philips"
+      }
+    ]
+  },
+  {
+    "_id": "31655518-db2b-4727-bbaa-bf06c78417cb",
+    "name": "Design Patterns",
+    "image": "images/DesignPatterns.png",
+    "desc": "Project Description: This project/learning period was a time spent studying object oriented design patterns and their applications to software solutions being built both in and out of class. We studied common patterns such as facade, strategy, iterator, singleton, and more. Overall, this learning period taught the importance of organizing code and creating space for reusibility.",
+    "skills": [
+      "Design Patterns",
+      "Inheritance",
+      "Polymorphism",
+      "OOP Principles",
+      "Java Syntax"
+    ],
+    "contributions": []
+  },
+  {
+    "_id": "31655518-db2b-4727-bbaa-bf06c78417cb",
+    "name": "Basic Web Development",
+    "image": "images/csce190.png",
+    "desc": "This project mainly spent time learning the basics of web development. This included learning HTML, CSS, and JavaScript. This was a time spent learning the design of webpages and how they interacted with web browsers and mobile devices",
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Web Design",
+      "UX/UI Design",
+      "Wireframing",
+      "Prototyping"
+    ],
+    "contributions": []
+  }
+]
