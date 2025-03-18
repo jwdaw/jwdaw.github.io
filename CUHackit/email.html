@@ -1,0 +1,18 @@
+<html>
+  <body style="font-family: Arial, sans-serif; color: #333">
+    <h2 style="color: #2e86c1">Someone Is At Your Mailbox!</h2>
+    <p><strong>Image Name:</strong> {key}</p>
+    <p><strong>Bucket:</strong> {bucket}</p>
+    <p>Rekognition detected the following faces:</p>
+    <pre style="background: #f4f4f4; padding: 10px; border-radius: 5px">
+                {json.dumps(response['FaceDetails'], indent=2)}
+            </pre
+    >
+    <p>
+      🔗
+      <a href="{image_url}" style="color: #1e90ff; font-weight: bold"
+        >Click here to view the image</a
+      >
+    </p>
+  </body>
+</html>
