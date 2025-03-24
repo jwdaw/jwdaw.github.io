@@ -1,0 +1,537 @@
+/*--------------------------------------------------------------*/
+/*-------------------------INDEX.HTML CSS-----------------------*/
+/*--------------------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Structure*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+}
+
+#main-header h1 {
+  padding: 10px;
+  background-color: darkred;
+  color: white;
+}
+
+#news {
+  margin: 5px;
+  padding: 10px;
+  background-color: darkred;
+  color: white;
+  border-radius: 10px;
+  min-height: 362px;
+}
+
+.news p {
+  display: flex;
+  align-items: center;
+}
+
+#main-content h3 {
+  padding: 10px;
+  background-color: darkred;
+  color: white;
+}
+
+#main-content h2 {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+}
+
+#main-footer p {
+  border-radius: 0px;
+  margin: 0;
+}
+
+/*Image Slideshow*/
+
+#img-section {
+  border: darkgray 5px solid;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
+
+#dots {
+  padding-top: 10px;
+}
+
+#slideshow {
+  border-radius: 10px;
+  margin: 5px;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  border-radius: 10px;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/*Navigation*/
+#main-nav ul {
+  border-radius: 10px;
+  list-style: none;
+  padding: 2px;
+  margin: 5px;
+  border: 5px darkgray solid;
+}
+
+.hide-small {
+  display: none;
+}
+
+#toggle-nav div {
+  width: 25px;
+  height: 2px;
+  background-color: black;
+  margin: 4px 0;
+}
+
+#toggle-nav {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 10px;
+  align-items: center;
+}
+
+#main-nav ul li {
+  display: flex;
+  display: block;
+}
+
+#main-nav ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  display: block;
+  border-radius: 10px;
+}
+
+#main-nav ul li a:hover {
+  background-color: darkgray;
+  color: white;
+  border-radius: 10px;
+}
+
+/*Typography*/
+#main-header {
+  text-align: center;
+}
+
+#main-content {
+  text-align: center;
+}
+
+/*Media Queries*/
+@media (min-width: 900px) {
+  #main-nav ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  #img-section {
+    padding-bottom: 40px;
+  }
+
+  .hide-small {
+    display: block;
+  }
+
+  #toggle-nav {
+    display: none;
+  }
+  #flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .flex-item {
+    min-width: 50%;
+    max-width: 50%;
+  }
+  .flex-item p,
+  .flex-item #img-section {
+    min-height: 80%;
+    max-height: 80%;
+  }
+}
+
+/*--------------------------------------------------------------*/
+/*-------------------------ABOUT.HTML CSS-----------------------*/
+/*--------------------------------------------------------------*/
+/*Structure*/
+
+#jackson-info {
+  margin: 5px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+
+.flex-section {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+#hobbies {
+  background-color: darkred;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+
+#hobbies p {
+  background-color: black;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+
+#jackson-info p {
+  margin: 5px;
+  padding: 10px;
+  background-color: darkred;
+  color: white;
+  border-radius: 10px;
+}
+
+#flex-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#hobby-img {
+  border-radius: 10px;
+  border: 20px solid black;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  max-width: 50%;
+  min-width: 50%;
+  margin: auto;
+}
+
+#hobbies {
+  margin-bottom: 20px;
+}
+
+#profile-img {
+  border-radius: 120px;
+  border: 20px solid black;
+  margin-bottom: 10px;
+  max-width: 240px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+#jackson-info {
+  margin: auto;
+}
+
+/*Typography*/
+#jackson-info {
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Media Queries */
+@media (max-width: 900px) {
+  #flex-box {
+    display: block;
+  }
+
+  .jd-info p {
+    margin: auto;
+  }
+  #hobby-img {
+    max-width: 98%;
+    min-width: 98%;
+  }
+
+  #hobbies p {
+    margin: auto;
+  }
+  #hobbies {
+    margin-bottom: 10px;
+  }
+  #hobby-img {
+    margin: auto;
+  }
+}
+
+/*--------------------------------------------------------------*/
+/*-------------------------PROJECTS.HTML CSS-----------------------*/
+/*--------------------------------------------------------------*/
+/*Structure*/
+#project-menu {
+  display: flex;
+  flex-direction: column;
+  background-color: darkred;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  min-width: fit-content;
+  max-width: fit-content;
+  align-items: center;
+  justify-content: center;
+}
+
+#project-menu button {
+  margin: 10px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+
+#flex-project {
+  display: flex;
+  flex-direction: row;
+}
+
+#project-top {
+  display: flex;
+  flex-direction: row;
+}
+
+#project-top img {
+  border-radius: 10px;
+  border: 20px solid black;
+
+  margin-right: 10px;
+}
+
+#project-desc {
+  background-color: black;
+  border-radius: 10px;
+  padding: 10px;
+  margin: auto;
+  display: flex;
+}
+
+#project-top p {
+  color: white;
+  background-color: darkred;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+#project-top img {
+  margin-bottom: 20px;
+  max-height: 250px;
+}
+
+#project-top h2 {
+  margin: auto;
+}
+
+#project-bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+#skills,
+#sources {
+  background-color: darkred;
+  padding: 10px;
+  margin: 5px;
+  color: white;
+  border-radius: 10px;
+}
+
+#skills p,
+#sources p {
+  background-color: black;
+  padding: 10px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 900px) {
+  #project-menu {
+    margin: auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .flex-section {
+    display: flex;
+    flex-direction: column;
+  }
+  #project-desc {
+    display: flex;
+    margin: 20px;
+  }
+  .flex-projects {
+    display: flex;
+    flex-direction: row;
+  }
+  #project-top {
+    display: block;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+  #project-top img {
+    margin-top: 20px;
+  }
+  #project-bottom {
+    flex-direction: column;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+  @media (max-width: 670px) {
+    .flex-projects {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+/*--------------------------------------------------------------*/
+/*-------------------------CONTACT.HTML CSS-----------------------*/
+/*--------------------------------------------------------------*/
+/*Structure*/
+#main-content {
+  text-align: center;
+}
+
+#main-content h1,
+p {
+  background-color: darkred;
+  color: white;
+  border-radius: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+}
+
+#main-content p {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+}
+
+#flex-box {
+  background-color: darkred;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#contact-me {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+#contact-object {
+  margin: 10px;
+}
+
+@media (min-width: 900px) {
+  #contact-me {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+  }
+}
+
+/*--------------------------------------------------------------*/
+/*------------------------BLOG.HTML CSS-----------------------*/
+/*--------------------------------------------------------------*/
+/*Structure*/
+#flex-blog {
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#hack-video {
+  max-width: 200px;
+  max-height: 200px;
+  border: 10px solid darkred;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.flex-post {
+  margin: 5px;
+  background-color: darkgray;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#flex-blog img {
+  border: 10px solid darkred;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.blog-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Media Queries */
+
+@media (max-width: 900px) {
+  .blog-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.hidden {
+  display: none;
+}
